@@ -4,9 +4,9 @@ const compiledTransaction = require("./build/TransactionFactory.json")
 
 
 const provider = new HDWalletProvider(
-  'card fabric three guess wire output sting unfair nut pear female wagon',
+  '.........',
   // remember to change this to your own phrase!
-  'https://ropsten.infura.io/v3/1b66f20b7773493f995aa43d6a1313b0'
+  'your infura link'
   // remember to change this to your own endpoint!
 );
 const web3 = new Web3(provider);
