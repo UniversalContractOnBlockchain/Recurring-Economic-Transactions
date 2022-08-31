@@ -1,0 +1,36 @@
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+.main-div-contracts {
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: #0074d9 !important;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0074d9 !important;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  &:visited{
+      color: red;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+}

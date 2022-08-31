@@ -1,0 +1,32 @@
+$dark_blue: #5558DD;
+
+.term-item{
+    margin-top: 0.5em;
+}
+
+.main-grid{
+    margin-top: 5em;
+    padding: 3em;
+}
+
+.summary-grid{
+    background-color: $dark_blue;
+}
+
+.item-accordion{
+    background-color: red;
+}
+
+.summary-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
