@@ -32,12 +32,62 @@ DATABASE_PASSWORD='yourpass'
 DATABASE_USERNAME='yourusername'
 DATABASE_HOST='localhost'
 ```
-Then, navigate to the folder and run
+Before starting to run the backend server to establish a connection you need to have couple more things installed
+
+You need to have MySQL as a process running in the background as well. You can refer to the link below
+
+- [MySQL Installer](https://dev.mysql.com/downloads/installer/)
+
+To interact and modify the database make sure you have installed MySQL Workbench locally
+Refer to this link for more details. 
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+
+At this step you should already have node and npm installed on the local machine, if not install them as well 
+- [NodeJS](https://nodejs.org/en/download/)
+
+Supervisor is always nice to have to ensure the DB connection
+- [Supervisor](https://www.npmjs.com/package/supervisor)
+
+
+The DB is still immature so the table names have to match EXACTLY!
+
+The scheme name has to be: 'recurrent_transactions'
+You need to have 2 tables namely 
+
+- proposed_terms
+- supplier_proposed_contracts
+
+Here are some pictures to help you understand what the fields are supposed to look like
+
+![ProposedTerms](proposed_terms.png)
+
+
+![SupplierProposedContracts](supplier_proposed_contracts.png)
+
+And then you should able to run these commands to establish a connection!
 
 ```
 npm install --legacy-peer-deps
 supervisor server.js
 ```
+If you do not have supervisor installed you can change the above command to
+
+```
+node server.js
+```
+
+### In case of an issue with supervisor!
+
+```
+mv ~/.npmrc ~/.npmrc.old
+
+npm prefix -g
+
+npm install supervisor -g
+```
+
+Be aware that the commands can vary from windows to other OS environments.
+
 ## We are almost ready to go!
 
 Go onto a terminal and find your local working environment where this project is installed under UI/ and run
