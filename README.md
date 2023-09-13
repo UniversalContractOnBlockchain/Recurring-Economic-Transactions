@@ -49,7 +49,6 @@ npm start
 # Links onto some resources
 
 - [paper634](https://www.romjist.ro/abstract-634.html)
-- [Documentation on the platform](https://alabtk.gitbook.io/universal-contract-on-blockchain/)
 
 # How it works?
 
